@@ -22,7 +22,7 @@ function atualizaAnoRodape() {
 	// Manipulador do DOM
 	var anoRodape = document.querySelector('span.ano');
 	
-	// Recebe o ano atual do sistema
+	// Atualizando o ano no rodapé do nosso site
 	anoRodape.innerText = ano;
 }
 
