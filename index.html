@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+<!-- =======================================================
+
+    OLÁ!!!
+
+    Eu sou o Nando Angelo e fiz esse teste baseado no 
+    exercício 03 do curso de JavaScript do Guanabara.
+    
+    Se tiver alguma dúvida responda aos meus comentários 
+    nos vídeos do Guanabara ou fale comigo por e-mail: 
+    nandoangelo@gmail.com ou ainda pelo meu Whatsapp: 
+    (63) 98402-1954
+
+    Abraço do Nando!
+
+   =======================================================  -->
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra que personagem você poderia ser na turma do Chaves apenas com seu ano de nascimento. Baseado no exercício 03 do curso de JavaScript do professor Gustavo Guanabara, desenvolvi esse pequeno teste para deixar as coisas mais divertidas.">
+    <meta author="Fernando Angelo">
+    <meta name="keywords" content="javscript,curso em vídeo,guanabara,nandoangelo">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Ícone do nosso site -->
+    <link rel="icon" href="img/icon.png">
+
+    <title>Teste do Chaves</title>
+
+    <!-- Ícones do FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <!-- Estilo principal -->
+    <link href="css/visual.css" rel="stylesheet">
+  </head>
+
+  <body onload="atualizaAnoRodape()">
+    <!-- 
+      onload="atualizaAnoRodape()"
+
+      Ao carregar o <body> é ativada a função que criamos em 
+      JavaScript para atualizar o ano no rodapé do nosso site
+     -->
+
+      <!-- inicio: .container -->
+      <div class="container">
+
+        <!-- Caixa amarela com dica do que esse programa faz -->
+        <div class="recado">
+          <p>Descubra qual personagem de <strong>Chaves</strong> 
+          você poderia ser.</p>
+        </div>
+        
+        <h3>Ano de Nascimento</h3>
+
+        <!-- Campo para inserir o ano de nascimento -->
+        <input type="number" name="txtano" id="txtano" min="0" value="1900" placeholder="Ano em que você nasceu">
+
+        <h3>Sexo</h3>
+
+        <!-- Opção radio: 'masc' -->
+        <label class="radio-option">
+          <input type="radio" name="genre" id="masc" checked="checked">
+          Masculino 
+        </label>
+
+        <!-- Espaço em branco (2x) -->
+        &nbsp;&nbsp;
+
+        <!-- Opção radio: 'fem' -->
+        <label class="radio-option">
+          <input type="radio" name="genre" id="fem">
+          Feminino
+        </label>
+
+        <!-- Nosso botão mágico que chama a função 'verificar()' -->
+        <input type="button" value="Verificar" onclick="verificar()">
+
+        <!-- Espaço reservado para a resposta da função 'verificar()' -->
+        <div id="res">
+          <p>Preencha os campos e clique em 'Verificar'.</p>
+        </div>
+      </div>
+      <!-- fim: .container -->
+
+      <!-- início: footer -->
+      <footer>
+        <!-- 
+          Se lembra da função 'atualizaAnoRodape()'?
+          Ela atualiza o que está dentro do <span> abaixo
+         -->
+        <p class="copy">&copy; Nando Angelo <span class="ano">20xx</span></p>
+        
+        <!-- Link do meu Whatsapp -->
+        <a href="https://wa.me/5563984021954" 
+           title="Mande uma mensagem pra mim" 
+           class="fa fa-whatsapp"></a>
+
+        <!-- Link do meu Instagram -->
+        <a href="https://instagram.com/nandoangelo"
+           title="Siga meu instagram"
+           class="fa fa-instagram"></a>
+
+        <!-- Link do meu GitHub -->
+        <a href="https://github.com/nandoangelo"
+           title="Veja mais projetos"
+           class="fa fa-github"></a>
+
+        <!-- Link do meu canal no YouTube -->
+        <a href="https://youtube.com/nandoangelo"
+           title="Conheça meu canal"
+           class="fa fa-youtube"></a>
+      </footer>
+      <!-- fim: footer-->
+
+    <!-- Chamando nosso JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

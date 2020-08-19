@@ -1,0 +1,164 @@
+@charset 'utf-8';
+
+/* 
+*		visual.css
+*		versão: 1.0.0
+*		data:		2019-06-16
+*		autor:	Fernando Angelo
+*		email:	nandoangelo@gmail.com
+*
+*/
+
+/* Reset padrão */
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+/* Definindo que os elementos html e body ocuparão toda tela */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Configurando o corpo do site */
+body {
+  background: #433460;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Configurando nosso container */
+.container {
+	background-color: #fff;
+	color: #333;
+	width: 420px;
+  min-height: 320px;
+  padding: 42px 30px;
+  border-radius: 20px;
+}
+
+.recado {
+  background-color: gold;
+  width: 70%;
+  padding: 12px 16px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.35em;
+}
+
+/* Estilizando o título */
+h3 { margin: 0.5em 0; }
+
+
+/* Definindo um ponteiro para as opções do radio button */
+.radio-option { cursor: pointer; }
+
+/* Configurando a exibição da foto */
+#foto {
+  margin-top: 1em;
+  border-radius: 50%;
+  width: 180px;
+}
+/* Alterando nosso campo do formulário */
+input[type="number"] {
+	padding: 6px;
+	text-align: center;
+	font-size: 0.8em;
+  margin-top: 0.3em;
+}
+
+/* Personalizando nosso botão */
+input[type="button"] {
+  background-color: #0facf3;
+  border: 2px solid #0b7eb1;
+  border-radius: 10px;
+  padding: 8px;
+  width: 80%; /* deixando ele responsivo */
+  font-size: 1em;
+  color: #fff;
+  margin: 1em 0;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Adicionando efeito ao botão */
+input[type="button"]:hover,
+input[type="button"]:focus { 
+  background-color: #0b7eb1;
+  border-color: #095e85;
+  transition: all 0.3s;
+}
+
+/* Configurando nosso rodapé */
+footer {
+  color: #fff; 
+  margin: 1.3em;
+}
+
+/* Ícones para redes sociais */
+.fa {
+  color: #FFF;
+  font-size: 1.25em !important;
+  padding: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 2px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+}
+/* Definindo transição */
+.fa:hover {
+  transition: all 0.35s;
+}
+/* Cor verde para o Whatsapp */
+.fa-whatsapp:hover,
+.fa-whatsapp:focus { 
+  background-color: #00b489;
+  border-color: #00b489;
+}
+/* Cor vermelha alaranjada para o Instagram */
+.fa-instagram:hover,
+.fa-instagram:focus { 
+  background-color: tomato;
+  border-color: tomato;
+}
+/* Cor azul para o Facebook */
+.fa-github:hover,
+.fa-github:focus  { 
+  background-color: #9244be;
+  border-color: #9244be;
+}
+/* Cor vermelha para o YouTube */
+.fa-youtube:hover,
+.fa-youtube:focus { 
+  background-color: #bb0000;
+  border-color: #bb0000;
+}
+
+/* MEDIA QUERIES */
+/* Definindo um comportamento responsivo */
+@media all and (max-width: 500px) {
+  body {
+    display: inline-block;
+  }
+	.container { 
+    width: 320px;
+    margin: 0 auto;
+    border-radius: 0;
+    padding: 20px 0px;
+  }
+}
