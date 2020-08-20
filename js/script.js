@@ -41,13 +41,16 @@ function verificar() {
 	var resposta = document.querySelector('div#res');
 
 	// Teste para saber se o valor inserido é válido
-	if (anoNascimento.value <= 0 || anoNascimento.value > ano) {
+	if (anoNascimento.value < 0 || (ano - Number(anoNascimento.value)) > 125 || anoNascimento.value >= ano ) {
 		
-		// ENCONTROU ERRO... 
+		// CONDIÇÕES:
+		// * O ano digitado não pode ser negativo
+		// * A pessoa não pode ter mais de 125 anos
+		// * O ano digitado não deve ser maior ou igual ao ano atual
 		
-		// Exibe alerta para o usuário
-		window.alert(`[ERROR] "${anoNascimento.value}" Não é um valor aceitável.\n`+
-			`Verifique os dados e tente novamente.`);
+		// Caso as condições não sejam atendidas exibe este alerta:
+		window.alert(`[ERRO!] O valor: "${anoNascimento.value}" Não é um valor aceitável.\n`+
+			`Tente usar um outro valor.`);
 	}
 	else {
 		
