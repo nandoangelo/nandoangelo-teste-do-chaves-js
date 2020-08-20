@@ -41,7 +41,7 @@ function verificar() {
 	var resposta = document.querySelector('div#res');
 
 	// Teste para saber se o valor inserido é válido
-	if (anoNascimento.value == 0 || anoNascimento.value > ano) {
+	if (anoNascimento.value <= 0 || anoNascimento.value > ano) {
 		
 		// ENCONTROU ERRO... 
 		
